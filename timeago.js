@@ -1,21 +1,11 @@
 /*
  * node-timeago
- * Cam Pedersen
- * <diffference@gmail.com>
- * Oct 6, 2011
- * Timeago is a jQuery plugin that makes it easy to support automatically
- * updating fuzzy timestamps (e.g. "4 minutes ago" or "about 1 day ago").
+ * DB.Murphy
+ * <rainbolean@sina.com>
+ * Oct 6, 2015
  *
  * @name timeago
- * @version 0.10.0
- * @requires jQuery v1.2.3+
- * @author Ryan McGeary
- * @license MIT License - http://www.opensource.org/licenses/mit-license.php
- *
- * For usage and examples, visit:
- * http://timeago.yarp.com/
- *
- * Copyright (c) 2008-2011, Ryan McGeary (ryanonjavascript -[at]- mcgeary [*dot*] org)
+ * @version 0.2.1
  */
 module.exports = function (timestamp) {
   if (timestamp instanceof Date) {
@@ -32,19 +22,19 @@ var settings = {
   strings: {
     prefixAgo: null,
     prefixFromNow: null,
-    suffixAgo: "ago",
+    suffixAgo: "前",
     suffixFromNow: "from now",
-    seconds: "less than a minute",
-    minute: "about a minute",
-    minutes: "%d minutes",
-    hour: "about an hour",
-    hours: "about %d hours",
-    day: "a day",
-    days: "%d days",
-    month: "about a month",
-    months: "%d months",
-    year: "about a year",
-    years: "%d years",
+    seconds: "小于1分钟",
+    minute: "1分钟",
+    minutes: "%d 分钟",
+    hour: "大约1小时",
+    hours: "大约 %d 小时",
+    day: "1天",
+    days: "%d 天",
+    month: "大约一个月",
+    months: "%d 个月",
+    year: "大约一年",
+    years: "%d 年",
     numbers: []
   }
 };
